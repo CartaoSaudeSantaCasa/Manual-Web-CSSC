@@ -63,7 +63,7 @@ async function loadData() {
     updateSelectOptions(); // preenche os selects iniciais
     handleSearch();        // exibe todos (ou limitado)
   } catch (error) {
-    resultsContainer.innerHTML = '<p style="text-align: center; color: #cc0000; grid-column: 1 / -1;">Erro ao conectar com o banco de dados.</p>';
+    resultsContainer.innerHTML = '<p style="text-align: center; color: #cc0000; grid-column: 1 / -1;">Lista de clientes em atualização, <br>por favor, tente novamente mais tarde. </p>';
   }
 }
 
@@ -241,7 +241,3 @@ Object.values(filters).forEach(input => {
 });
 
 loadData();
-// ============ EASTER EGG (10% de chance) ============
-if (Math.random() < 0.05) {
-  document.querySelector('header').insertAdjacentHTML('beforeend', '<div id="assinatura-fold">by: Lucas Lima</div>');
-}
