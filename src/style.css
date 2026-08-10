@@ -258,7 +258,7 @@ body::after {
   position: fixed;
   width: 400px; /* Tamanho base da marca d'água */
   height: 400px;
-  background-image: url('logos/logo_CSSC_dourada_minimalista.png');
+  background-image: url('logos/logo_transparente.svg');
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.8; /* Transparência definida em 5% para ser muito sutil */
